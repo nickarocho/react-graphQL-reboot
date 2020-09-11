@@ -1,0 +1,4 @@
+*.history
+.history/*
+package-lock.json
+.env
