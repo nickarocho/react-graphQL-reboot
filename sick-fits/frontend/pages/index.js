@@ -1,9 +1,9 @@
 // import React from 'react'; //NOTE: don't need this cuz Next.js takes care of that for us
-import Link from 'next/link';
+import Items from '../components/Items';
 
 const Home = props => (
   <div>
-    <p>Home!</p>
+    <Items />
   </div>
 )
 
