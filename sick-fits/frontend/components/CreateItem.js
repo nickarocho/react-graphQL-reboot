@@ -20,7 +20,9 @@ const CREATE_ITEM_MUTAION = gql`
       price: $price
       image: $image
       largeImage: $largeImage
-    )
+    ) {
+      id
+    }
   }
 `;
 
@@ -49,6 +51,7 @@ class CreateItem extends Component {
             e.preventDefault();
             // call the mutation
             const res = await createItem();
+            console.log(res);
             // bring them to the PDP
             Router.push({
               pathname: '/item',
